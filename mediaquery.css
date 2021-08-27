@@ -1,0 +1,91 @@
+@media(max-width:991px)
+{
+    header,header.sticky{
+        padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+       width: 100%;
+       height: calc(100% - 68px);
+       position: fixed;
+       top: 68px;
+       left: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       background-color: white;
+    }
+    header .navigation li{
+        margin-left: 0px;
+    }
+    header .navigation li a{
+        font-size: 25px;
+        color: #111;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background: url(img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+    section{
+        padding: 20px;
+    }
+    .banner .content h2{
+        font-size: 48px;
+    }
+    .about .row {
+        flex-direction: column;
+    }
+    .about .col{
+        position: relative;
+        width: 100%;
+    }
+    .about .row .col .imgbx{
+        height: 300px;
+        margin-top: 20px;
+    }
+    .menu .content{
+        margin-top: 20px;
+    }
+    .menu .content .box{
+        margin: 10px;
+    }
+    .menu .content .box .imgbx{
+        height: 260px;
+    } 
+    .title{
+        text-align: center;
+    }
+    .titletext{
+        margin-top: 20px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    .testimonials .content .box{
+        margin: 10px;
+        padding: 20px;
+    }
+    .contactForm{
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
